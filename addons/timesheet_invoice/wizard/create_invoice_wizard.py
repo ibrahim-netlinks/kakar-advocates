@@ -29,7 +29,8 @@ class CreateTimesheetInvoice(models.TransientModel):
                 'company_id': timesheet_line.company_id.id,
                 'account_id': timesheet_line.account_id.id,
                 'name': timesheet_line.name,
-                'quantity': timesheet_line.unit_amount
+                'quantity': imesheet_line.unit_amount,
+                'price_unit': 500
             }))
         return {
             'name': _('Account Invoice'),

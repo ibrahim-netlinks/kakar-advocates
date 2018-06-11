@@ -22,3 +22,10 @@ class ProjectCases(models.Model):
         result = super(ProjectCases, self).create(vals)
         result.update({'case_ref_no': self.env['ir.sequence'].next_by_code('case_ref_no')})
         return result
+
+
+class EmployeeCases(models.Model):
+    _name = "hr.employee"
+    _description = "Inheriting Employee's Model to add field for cost"
+
+    emp_hourly_cost = fields.Float('Hourly Cost', required=True)

@@ -11,7 +11,8 @@
     'depends': [
         'base',
         'hr',
-        'project'
+        'project',
+        'hr.employee'
     ],
     'description': """
 Modification in Main Project Module
